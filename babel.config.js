@@ -13,7 +13,8 @@ module.exports = function (api) {
             assets: './assets',
             constants: './src/constants',
             routes: './src/routes',
-            redux: './src/redux'
+            redux: './src/redux',
+            hooks: './src/hooks'
           }
         }
       ]

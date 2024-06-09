@@ -1,15 +1,19 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { View, Text } from 'react-native'
+
+import ScreenContainer from 'components/ScreenContainer.jsx'
 
 const MenuScreen = () => {
   return (
-    <View>
-      <Text>MenuScreen</Text>
-    </View>
+    <ScreenContainer>
+      <View>
+        <Text>MenuScreen</Text>
+      </View>
+    </ScreenContainer>
   )
 }
 
-const styles = StyleSheet.create({
-})
+// const styles = StyleSheet.create({
+// })
 
 export default MenuScreen

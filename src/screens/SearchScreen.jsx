@@ -1,15 +1,26 @@
 import React from 'react'
-import { View, Text, StyleSheet } from 'react-native'
+import { Text, Button } from 'react-native'
 
-const SearchScreen = () => {
+import ScreenContainer from 'components/ScreenContainer.jsx'
+
+const SearchScreen = ({ navigation }) => {
+  const handleNavigateToScreen = (screenName) => {
+    navigation.navigate(screenName)
+  }
+
   return (
-    <View>
+    <ScreenContainer>
       <Text>SearchScreen</Text>
-    </View>
+      <Button
+        title='Go to Test Screen'
+        onPress={() => handleNavigateToScreen('Test')}
+      />
+    </ScreenContainer>
   )
 }
 
-const styles = StyleSheet.create({
-})
+// const styles = StyleSheet.create({
+//   container: {}
+// })
 
 export default SearchScreen
